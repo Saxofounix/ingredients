@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.ingredient > p,
+.recipe > p,
+.search-wrapper > form > h2,
+.search-wrapper > form > p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search-wrapper > form > input,
+button {
+  font-family: "Times New Roman", Times, serif;
+  height: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  padding: 0.5rem;
+  margin: 1rem 0.25rem;
+  background: white;
+}
+
+.search-wrapper > form > button {
+  flex: 5;
+  margin: 0 0.5rem;
+  color: white;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+.search-wrapper > form > input {
+  width: 70%;
+}
+
+.secondary-btn {
+  border: 1px solid white;
+  background: white;
+  outline: none;
+  margin-bottom: 1rem;
+  min-width: 80%;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
+  background: #a0e7e5;
+  border-radius: 20px;
+}
+.ingredient > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.ingredient > p {
+  margin-top: 0.5rem;
+  font-size: large;
+}
+.ingredient > button {
+  cursor: pointer;
+}
+.recipe-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  overflow-y: auto;
+  background: rgba(55, 99, 86, 0.9);
+  max-height: 70vh;
+  min-height: 70vh;
+  min-width: 90vw;
+  padding: 3rem;
+  line-height: 25px;
+}
+
+.recipe > h4 {
+  padding: 0.75rem 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+.recipe > a {
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  outline: none;
+  width: 15rem;
+}
+.recipe p {
+  margin: 1rem 0;
+}
+
+.recipe button {
+  cursor: pointer;
+  display: inline;
+  width: 5rem;
+  margin-left: -5px;
+  display: block;
+}
+
+.shape-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -33;
+}
+
+.shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 90px);
+  height: 20rem;
+  transform: rotateY(180deg);
+}
+
+.shape-divider .shape-fill {
+  fill: #ffaebc;
+}
+
+.loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
